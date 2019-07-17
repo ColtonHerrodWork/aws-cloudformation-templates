@@ -337,7 +337,7 @@ Resources:
     Type: AWS::EC2::EIPAssociation
     Properties:
       NetworkInterfaceId: !Ref 'Eth0'
-      AllocationId: !GetAtt [EIP1, AllocationId]
+      AllocationId: !GetAtt [EIP1, AllocationId] 
   SSHSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
